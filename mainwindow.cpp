@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    this->setWindowTitle("XCrypt");
+    this->setWindowTitle("Extreme Spatial Mapping Encryption");
     PyRunner = new PyRun(this);
     connect(PyRunner, &PyRun::outputReceived, this, &MainWindow::handlePythonData);
 }
